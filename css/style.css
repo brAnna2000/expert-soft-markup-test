@@ -1,1 +1,270 @@
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    background: #1b1e22;
+    font-family: Montserrat;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1128px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.cards-parts{
+    width: 360px;
+    height: 432px;
+    background-image: url(../img/back.png);
+    margin-bottom: 24px;
+    position: relative;
+}
+.cards-parts h3{
+    font-size: 20px;
+    margin: 16px 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+.cards-parts p{
+    margin: 0 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+.cards-parts{
+    -webkit-transition-property: background, height, width, color;
+	-o-transition-property: background, height, width, color;
+    transition-property: background, height, width, color;
+    
+    -webkit-transition-duration: 1s, 0.5s, 0.5s, 0.5s;
+	-o-transition-duration: 1s, 0.5s, 0.5s, 0.5s;
+    transition-duration: 1s, 0.5s, 0.5s, 0.5s;
+    
+    -webkit-transition-delay: 0.5s;
+	-o-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+} 
+.cards-parts:hover {
+	background: white;
+    font-size: 25px;
+    color: black;
+    height: 456px;
+    width: 384px;
+    border-radius: 4px;
+}
+.cards-parts:hover .date{
+    color:white;
+} 
+.img-block {
+	width: 360px;
+    height: 216px;
+	background-size: 100% 100%;
+}
+.absolute{
+    display: flex;
+    position: absolute;
+    top: 159px;
+    left: 0;
+}
+.absolute .price{
+    background-image: url(../img/orange.png);
+    height: 32px;
+    width: 78px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 4px;
+    padding-left: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #1B1E22;
+}
+.absolute .date{
+    background-image: url(../img/gray.png);
+    height: 32px;
+    width: 170px;
+    margin: 0;
+    padding: 0;
+    padding-top: 6px;
+    padding-left: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+}
+.cards-more{
+    position: absolute;
+    bottom: 14px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+}
+.transition-3 {
+    transition-property: height, width;
+    transition-duration: 0.5s, 0.5s;
+	transition-delay: 0.5s;
+	/* transition: height 2s ease, width 2s ease; */
+}	
+.cards-parts:hover .img-block{
+    width: 384px;
+    height: 228px;
+}
+@media screen and (max-width: 800px){
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: 750px;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .cards-parts{
+        width: 239px;
+        height: 287px;
+        background-image: url(../img/back.png);
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .cards-parts h3{
+        font-size: 14px;
+        margin: 6px 15px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .cards-parts p{
+        margin: 0 15px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+    }
+    .cards-parts:hover {
+        background: white;
+        font-size: 15px;
+        color: black;
+        height: 303px;
+        width: 255px;
+        border-radius: 4px;
+    }
+    .img-block {
+        width: 239px;
+        height: 143px;
+        background-size: 100% 100%;
+    }
+    .absolute{
+        display: flex;
+        position: absolute;
+        top: 105px;
+        left: 0;
+    }
+    .absolute .price{
+        background-image: url(../img/orange.png);
+        height: 21px;
+        width: 52px;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        padding-top: 4px;
+        padding-left: 5px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        color: #1B1E22;
+    }
+    .absolute .date{
+        background-image: url(../img/gray.png);
+        height: 21px;
+        width: 113px;
+        margin: 0;
+        padding: 0;
+        padding-top: 6px;
+        padding-left: 5px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+    }
+    .cards-parts:hover .img-block{
+        width: 255px;
+        height: 151px;
+    }
+}
+@media screen and (max-width: 600px){
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: 550px;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .cards-parts{
+        width: 175px;
+        height: 210px;
+        background-image: url(../img/back.png);
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .cards-parts h3{
+        font-size: 10px;
+        margin: 6px 15px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .cards-parts p{
+        margin: 0 15px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+    }
+    .cards-parts:hover {
+        background: white;
+        font-size: 15px;
+        color: black;
+        height: 222px;
+        width: 187px;
+        border-radius: 4px;
+    }
+    .img-block {
+        width: 175px;
+        height: 105px;
+        background-size: 100% 100%;
+    }
+    .absolute{
+        display: flex;
+        position: absolute;
+        top: 105px;
+        left: 0;
+    }
+    .absolute .price{
+        background-image: url(../img/orange.png);
+        height: 15px;
+        width: 38px;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        padding-top: 4px;
+        padding-left: 5px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 8px;
+        color: #1B1E22;
+    }
+    .absolute .date{
+        background-image: url(../img/gray.png);
+        height: 15px;
+        width: 83px;
+        margin: 0;
+        padding: 0;
+        padding-top: 6px;
+        padding-left: 5px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 7px;
+    }
+    .cards-parts:hover .img-block{
+        width: 187px;
+        height: 111px;
+    }
+}
